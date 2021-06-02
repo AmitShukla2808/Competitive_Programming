@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-// optimized solution for aggresive cows problem on spoj
+// optimized solution for aggresive cows problem 
 int solve(vector<int>A,int dis,int co){
     int pos=A[0],cows=1; 
     for(int i=0; i<A.size(); i++){
