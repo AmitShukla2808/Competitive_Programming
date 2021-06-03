@@ -1,3 +1,8 @@
+//Constraints: 1<=n<=10^6, INT_MIN<=A[i]<=INT_MAX
+//Time Complexity: O(32*n) = O(n)
+// The present code calculates the number that occurs only once in a vector where every other number
+// occurs k times
+
 #include <bits/stdc++.h>
 using namespace std;
 int solve(vector<int>A,int k){
