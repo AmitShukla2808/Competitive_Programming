@@ -1,6 +1,6 @@
 //Constraints: 1<=n<=10^6, 1<=A[i]<=10^9
 //Time Complexity: O(n)
-// Given an array and length of sliding window, find maximum element in each window5
+// Given an array and length of sliding window, find maximum element in each window
 
 #include<bits/stdc++.h>
 using namespace std;
