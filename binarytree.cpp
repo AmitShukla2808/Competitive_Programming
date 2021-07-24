@@ -2,7 +2,7 @@
 using namespace std;
 struct Node{
     int value;
-    Node *left; string name;
+    Node *left;
     Node *right;
     Node (int val){
         value=val;
@@ -10,6 +10,18 @@ struct Node{
         right=NULL;
     }
 };
+void levelorder(Node *root){
+    queue<Node *>q;
+    q.push(root);
+    while(!q.empty()){
+        if(q.front()!=NULL){
+            cout<<q.front()->value<<" ";
+            q.push(q.front()->left);
+            q.push(q.front()->right);
+        }
+        q.pop();
+    }
+}
 void preorder(Node *node){
     if(node==NULL){
         return;
@@ -54,6 +66,9 @@ int main(){
     cout<<endl;
     cout<<"Postorder Traversal : ";
     postorder(root);
+    cout<<endl;
+    cout<<"Levelorder Traversal : ";
+    levelorder(root);
     cout<<endl;
     return 0;
 }
